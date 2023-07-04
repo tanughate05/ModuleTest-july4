@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CURD</title>
+    <link rel="stylesheet" href="style.css">
+   
+<body>
+    
+        <h1 class="heading">Student Management CRUD</h1>
+        <div class="form-conatiner">
+            <form id="student-form">
+              <div class="input-inline"> 
+            <input type="text" id="Student-Name" name="Student-name" placeholder="Name">
+            <input type="text" id="Student-Email" name="E-mail" placeholder="Email">
+            
+            <input type="number" id="Student-GPA" name="GPA" placeholder="GPA">
+            
+            <input type="text" id="Student-Age" name="Age" placeholder="Age">
+           
+            <input type="text" id="Student-Degree" name="Degree" placeholder="Degree">
+
+</div>
+
+                <button type="submit" id="submit-Button">Add Student</button>
+
+
+            </form>
+            <div class="Search-btn">
+            <input type="text" id="searchInput" placeholder="Search By Name,email,degree">
+             </div>
+        </div>
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>${student.ID}</td>
+                    <td>${student.Name}</td>
+                    <td>${student.Email}</td>
+                    <td>${student.Age}</td>
+                    <td>${student.GPA}</td>
+                    <td>${student.Degree}</td>
+                    
+                    <td class="edit-button">&#9998;</td>
+                    <td class="delete-button">&#xf014;</td>
+                </tr>
+            </table>
+
+        </div>
+            
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
